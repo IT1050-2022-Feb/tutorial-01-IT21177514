@@ -13,6 +13,33 @@ sum = 1+2+3+...+10 = 55 */
 
 #include <stdio.h>
 int main() {
+
+  int n;
+	int number;
+	int total;
+	
+	//initialization phase
+	number=1;
+	total=0;
+	
+	printf("\n\nEnter value(integer) of \"n\": ");
+	scanf("%d",&n);
+	
+	//processing phase
+	
+	while(number!=n+1){
+		
+		total=total+number;
+		
+		number++;
+		
+	}//end while loop
+	
+	//termination phase
+	
+	printf("\n\nSum of the numbers from 1 to %d: %d",n,total);
+	
+	
   
   return 0;
 }
